@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Piedra Papel Tijera</title>
+      <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+      <main id="register-container" class="styled-container" style="display: none;">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <label for="new-username">Usuario:</label>
+                <input type="text" id="new-username" required>
+                <label for="new-password">Contraseña:</label>
+                <input type="password" id="new-password" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <p></p>
+            <button id="go-to-login" class="ri">Volver al Inicio de Sesión</button>
+        </main>
+        
+        <main id="login-container" class="styled-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="login-message"></p>
+            <button id="go-to-register" class="ri">Registrar nuevo usuario</button>
+        </main>
+        
+        <main id="game-container" style="display: none;">
+            <header>
+                <h1>Piedra, Papel y Tijera</h1>
+            </header>
+            <p class="piedritas">gana el que tenga más puntos</p>
+            <div class="vista">
+                  <p class="nombre jugador">jugador / CPU</p>
+                  <p class="puntos">
+                        <span id="puntos jugador">0</span>
+                        <span>‎ ‎ / ‎ ‎ </span>
+                        <span id="puntos computadora">0</span>
+                  </p>
+            </div>
+            <h2>escoge tu arma 🔪</h2>
+            <div class="objeto" id="arma">
+                <button class="arma" id="piedra">✊</button>
+                <button class="arma" id="papel">✋</button>
+                <button class="arma" id="tijera">✌</button>
+            </div>
+            <div class="mensaje" id="mensaje">
+                <p id="elejiste">‎</p>
+                <p id="cpu">‎</p>
+                <p id="resultado">‎</p>
+            </div>
+            <div class="boton reinicio">
+                <button class="reiniciar" id="reinicio">reiniciar juego</button>
+                <button class="reiniciar" id="troll">acabar juego</button>
+            </div>
+        </main>        
+      <script src="main.css"></script>
+      <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+:root{
+      --clr-azul :hsl(259, 100%, 14%);
+}
+
+body{
+      background-color: var(--clr-azul);
+      text-transform: capitalize;
+      text-shadow:  #ffffff 0px 0px 4px, #000000 0px 0px 6px;
+      text-decoration: #000000;
+      color: #ffffff;
+}
+
+.arma {
+      border: none;
+    padding: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.arma:active {
+      transform: scale(0.9); /* Reduce el tamaño */
+      background-color: #0056b3; /* Cambia ligeramente el color */
+}
+
+h1 {
+      text-transform: capitalize;
+      text-shadow: #ff00d4 1px 1px 2px, #b700ff -1px -1px 2px, #ffffff 0px 0px 4px;
+      color: #0000008f;
+      font-style: italic;
+}
+
+.reiniciar {
+      border: none;
+    padding: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.reiniciar:active {
+      transform: scale(0.9); /* Reduce el tamaño */
+      background-color: #ee0000; /* Cambia ligeramente el color */
+}
+
+#video-container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      text-align: center;
+}
+  
+video {
+      width: 400%;
+      height: 400%;
+      object-fit: cover;  /* Ajusta el video para cubrir toda el área disponible */
+}
+
+#login-container {
+      text-align: center;
+      margin-top: 20vh;
+      color: white;
+}
+
+#login-form {
+      display: inline-block;
+      text-align: left;
+}
+
+#login-form label, #login-form input {
+      display: block;
+      margin: 10px 0;
+}
+
+#game-container {
+      display: none; /* Oculta el juego al inicio */
+}
+
+/* Registro y Login */
+form {
+      background-color: var(--clr-azul);
+      padding: 40px;
+      width: 500px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #000000;
+      display: inline-block;
+}
+
+form label, form input, form button {
+      display: block;
+      margin: 10px 0;
+      font-size: 16px;
+}
+
+form input {
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+}
+
+form button {
+      background-color: #0056b3;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px 20px;
+      text-transform: capitalize;
+      font-size: 18px;
+      box-shadow: 0px 0px 4px #ffffff;
+      transition: transform 0.2s, background-color 0.2s;
+}
+
+form button:hover {
+      background-color: #0080ff;
+}
+
+form button:active {
+      transform: scale(0.9);
+      background-color: #0080ff70;
+      color: #ffffff9d;
+}
+
+#login-container, #register-container {
+      text-align: center;
+      margin-top: 10vh;
+      color: white;
+}
+
+#login-message {
+      color: #ff0000;
+      text-shadow: 0px 0px 4px #ff0000, 0px 0px 10px #000000;
+      font-size: 16px;
+      margin-top: 10px;
+}
+
+h2 {
+      color: #ffffff;
+      text-shadow: #ff00d4 1px 1px 2px, #b700ff -1px -1px 2px, #ffffff 0px 0px 4px;
+}
+
+.ri {
+      background-color: hsl(259, 100%, 16%);
+      border-color: #b700ff;
+    padding: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0px;
+    width: 200px;
+    height: 80px;
+    color: white;
+    text-decoration: #000000;
+    text-shadow: #ff00d4 1px 1px 2px, #b700ff -1px -1px 2px, #ffffff 0px 0px 4px;
+}
+
+.ri:active {
+      transform: scale(0.9); /* Reduce el tamaño */
+      background-color: hsl(259, 100%, 6%);
+      border-color: #16001f; /* Cambia ligeramente el color */
+      color: #cfcfcf;
+}
